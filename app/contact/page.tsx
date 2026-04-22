@@ -1,15 +1,15 @@
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
-import { ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
+import { MainStyles } from "@/utils/tailwind/main";
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className={MainStyles}>
-      <Header params={RoutesNames.HOME} />
+      <Header params={RoutesNames.CONTACT} />
 
-      <section className={ContentSectionStyles} >
-        <Navbar params={RoutesNames.HOME} />
+      <section>
+        <Navbar params={RoutesNames.CONTACT} />
 
         <section>
           content

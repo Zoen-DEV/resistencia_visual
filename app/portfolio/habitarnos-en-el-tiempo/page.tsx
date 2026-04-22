@@ -3,13 +3,13 @@ import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
 import { ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
 
-export default function Home() {
+export default function PortfolioHabitarnosEnElTiempo() {
   return (
     <main className={MainStyles}>
-      <Header params={RoutesNames.HOME} />
+      <Header params={RoutesNames.PROJECT_1} />
 
-      <section className={ContentSectionStyles} >
-        <Navbar params={RoutesNames.HOME} />
+      <section className={ContentSectionStyles}>
+        <Navbar params={RoutesNames.PORTFOLIO} />
 
         <section>
           content
