@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "push": "npm version patch && git push",
+    "push:minor": "npm version minor && git push"
   },
   "dependencies": {
     "next": "16.2.4",
