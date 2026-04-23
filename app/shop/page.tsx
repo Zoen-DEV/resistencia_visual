@@ -1,7 +1,11 @@
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
-import { ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
+import {
+  ContentContainerStyles,
+  ContentSectionStyles,
+  MainStyles,
+} from "@/utils/tailwind/main";
 
 export default function Shop() {
   return (
@@ -11,9 +15,7 @@ export default function Shop() {
       <section className={ContentSectionStyles}>
         <Navbar params={RoutesNames.SHOP} />
 
-        <section>
-          content
-        </section>
+        <section className={ContentContainerStyles}>shop</section>
       </section>
     </main>
   );

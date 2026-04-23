@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
-import { ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
+import { ContentContainerStyles, ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
 
 export default function PortfolioHabitarnosEnElTiempo() {
   return (
@@ -11,9 +11,7 @@ export default function PortfolioHabitarnosEnElTiempo() {
       <section className={ContentSectionStyles}>
         <Navbar params={RoutesNames.PORTFOLIO} />
 
-        <section>
-          content
-        </section>
+        <section className={ContentContainerStyles}>Habitarnos en el tiempo</section>
       </section>
     </main>
   );

@@ -1,19 +1,21 @@
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
-import { MainStyles } from "@/utils/tailwind/main";
+import {
+  ContentContainerStyles,
+  ContentSectionStyles,
+  MainStyles,
+} from "@/utils/tailwind/main";
 
 export default function Contact() {
   return (
     <main className={MainStyles}>
       <Header params={RoutesNames.CONTACT} />
 
-      <section>
+      <section className={ContentSectionStyles}>
         <Navbar params={RoutesNames.CONTACT} />
 
-        <section>
-          content
-        </section>
+        <section className={ContentContainerStyles}>contact</section>
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import { RoutesNames } from "@/utils/enums/routes.enum";
-import { ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
+import { ContentContainerStyles, ContentSectionStyles, MainStyles } from "@/utils/tailwind/main";
 
 export default function PortfolioCotidiana() {
   return (
@@ -11,7 +11,7 @@ export default function PortfolioCotidiana() {
       <section className={ContentSectionStyles}>
         <Navbar params={RoutesNames.PORTFOLIO} />
 
-        <section>content</section>
+        <section className={ContentContainerStyles}>Cotidiana</section>
       </section>
     </main>
   );
